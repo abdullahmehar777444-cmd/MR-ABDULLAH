@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PTB Pro | Academic Command Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#4f46e5', // Indigo 600
+                accent: '#14b8a6', // Teal 500
+                // Premium Dark Theme
+                surface: '#1f2937', // Gray 800
+                background: '#111827', // Gray 900
+                text: {
+                    primary: '#f3f4f6', // Gray 100
+                    secondary: '#9ca3af', // Gray 400
+                },
+                border: '#374151', // Gray 700
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Inter', 'sans-serif'],
+              serif: ['"Jameel Noori Nastaleeq"', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jameel-noori-nastaleeq" rel="stylesheet">
+    <style>
+        body { 
+            scroll-behavior: smooth; 
+            background-color: #111827; /* Gray 900 */
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1f2937; } /* Gray 800 */
+        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 10px; } /* Gray 600 */
+        ::-webkit-scrollbar-thumb:hover { background: #6b7280; } /* Gray 500 */
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="bg-brand-background text-brand-text-primary transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
